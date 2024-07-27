@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmosSO19</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: black;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-image: url('headerbg1.png');
+      background-size: cover;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    header h1 {
+      flex: 2;
+      color: azure;
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    nav {
+      margin-top: 0px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a.a1 {
+      padding:25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a.a2 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    nav a.a1:hover {
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    footer {
+      height: 70px;
+      width:100%;
+      background-color: black;
+      color: burlywood;
+      text-align: center;
+    }
+
+    @keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.twinkle {
+  animation: twinkling 1s infinite;
+}
+
+.dropbtn {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  background-color: rgba(240, 255, 255, 0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000a4;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.073);
+  z-index: 1;
+  margin-left: 6px;
+  margin-top: 23px;
+}
+
+
+.dropdown-content a {
+  color: rgb(240, 255, 255);
+  padding: 11px 16px ;
+  padding-right: 3px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: rgba(240, 255, 255, 0.692);
+  color: black;
+  cursor: url("astronautmoveicon.png"), auto;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.section {
+  width: 100%;
+}
+
+.section h1 {
+  color: burlywood;
+  font-size: 40px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.item {
+  display: flex;
+  border: 1px solid azure;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  border: 1px solid burlywood;
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .image-credit {
+  opacity: 1;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.content h3 {
+  color: purple;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  color: azure;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.star {
+  position: relative;
+  animation: twinkling 1s infinite;
+}
+
+h1 {
+  color: burlywood;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+}
+
+
+h1 img {
+  width: 50px;
+  height: 50px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="icons8-telescope-64.png">
+        <h1>STARDUST ODYSSEY</h1>
+        
+        <nav>
+          <a class="a1" href="HomeSO19.html">Home</a>
+          <a class="a1" href="AboutSO19.html">About</a>
+          <div class="dropdown">
+            <button class="dropbtn"><a class="a2" href="CosmosSO19.html">Cosmos</a></button>
+            <div class="dropdown-content">
+              <a href="#nebulae">NEBULAE</a>
+              <a href="#blackholes">BLACK HOLES</a>
+              <a href="#galaxies">GALAXIES</a>
+            </div>
+          </div>
+          <a class="a1" href="MissionsSO19.html">Missions</a>      
+          <a class="a1" href="ContactSO19.html">Contact</a>
+          <a class="a1" href="JoinusSO19.html">Join us</a>
+        </nav>
+      </header>
+      <div class="section" id="nebulae">
+        <br><br><br><br>
+        <h1> <img class="star" src="universe.png" alt=""> NEBULAE</h1>
+        <div class="grid">
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula1.jpg" alt="Nebula 1">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA, ESA, Hubble Heritage Team</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Revisiting the Viel Nebula</h3>
+              <p>This image shows a small section of the Veil Nebula, as it was observed by the NASA/ESA Hubble Space Telescope. This section of the outer shell of the famous supernova remnant is in a region known as NGC 6960 or — more colloquially — the Witch's Broom Nebula.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula2.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  Raghvendra Sahai and John Trauger (JPL), the WFPC2 science team, and NASA/ESA</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>The Hourglass Nebula</h3>
+              <p>This is an image of MyCn18, a young planetary nebula located about 8,000 light-years away, taken with the Wide Field and Planetary Camera 2 (WFPC2) aboard the Hubble Space Telescope (HST).
+
+                This Hubble image reveals the true shape of MyCn18 to be an hourglass with an intricate pattern of 'etchings' in its walls. This picture has been composed from three separate images taken in the light of ionized nitrogen (represented by red), hydrogen (green), and doubly-ionized oxygen (blue).</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula3.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI)</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Hubble captures view of “Mystic Mountain”</h3>
+              <p>This craggy fantasy mountaintop enshrouded by wispy clouds looks like a bizarre landscape from Tolkien’s The Lord of the Rings. The NASA/ESA Hubble Space Telescope image, which is even more dramatic than fiction, captures the chaotic activity atop a pillar of gas and dust, three light-years tall, which is being eaten away by the brilliant light from nearby bright stars. The pillar is also being assaulted from within, as infant stars buried inside it fire off jets of gas that can be seen streaming from towering peaks.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula4.png" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credits: Romano Corradi, Instituto de Astrofisica de Canarias, Tenerife,
+                  Spain; Mario Livio, Space Telescope Science Institute, Baltimore, Md.;
+                  Ulisse Munari, Osservatorio Astronomico di Padova-Asiago, Italy; Hugo
+                  Schwarz, Nordic Optical Telescope, Canarias, Spain; and NASA</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>SYMBIOTIC STAR BLOWS BUBBLES INTO SPACE</h3>
+              <p>A tempestuous relationship between an unlikely pair of stars may have
+                created an oddly shaped, gaseous nebula that resembles an hourglass
+                nestled within an hourglass.
+                
+                Images taken with Earth-based telescopes have shown the larger,
+                hourglass-shaped nebula.Astronomers have dubbed
+                the entire nebula the "Southern Crab Nebula" (He2-104), because, from
+                ground-based telescopes, it looks like the body and legs of a crab. The
+                nebula is several light-years long.Astronomers speculate that the interaction between these two stars may
+                have sparked episodic outbursts of material, creating the gaseous
+                bubbles that form the nebula. </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula5.png" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credits: NASA, ESA, CSA, STScI, Webb ERO Production Team</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Wolf-Rayet star</h3>
+              <p>The rare sight of a Wolf-Rayet star - among the most luminous, most massive, and most briefly detectable stars known - was one of the first observations made by NASA's James Webb Space Telescope in June 2022. Webb shows the star, WR 124, in unprecedented detail with its powerful infrared instruments. The star is 15,000 light-years away in the constellation Sagitta. 
+                <br> Dust is integral to the workings of the universe: It shelters forming stars, gathers together to help form planets, and serves as a platform for molecules to form and clump together - including the building blocks of life on Earth. Despite the many essential roles that dust plays, there is still more dust in the universe than astronomer' current dust-formation theories can explain. The universe is operating with a dust budget surplus.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula6.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credits: NASA, ESA, CSA, and STScI</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Southern Ring Nebula</h3>
+              <p>Some stars save the best for last. <br>
+
+                The dimmer star at the center of this scene has been sending out rings of gas and dust for thousands of years in all directions, and NASA’s James Webb Space Telescope has revealed for the first time that this star is cloaked in dust.
+                
+                Two cameras aboard Webb captured the latest image of this planetary nebula, cataloged as NGC 3132, and known informally as the Southern Ring Nebula. It is approximately 2,500 light-years away.
+                
+                Webb will allow astronomers to dig into many more specifics about planetary nebulae like this one – clouds of gas and dust expelled by dying stars. Understanding which molecules are present, and where they lie throughout the shells of gas and dust will help researchers refine their knowledge of these objects.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula7.png" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credits: NASA, ESA, CSA, STScI, Webb ERO Production Team</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>A Cosmic Tarantula</h3>
+              <p>In this mosaic image stretching 340 light-years across, Webb's Near-Infrared Camera (NIRCam) displays the Tarantula Nebula star-forming region in a new light, including tens of thousands of never-before-seen young stars that were previously shrouded in cosmic dust. The most active region appears to sparkle with massive young stars, appearing pale blue</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula8.png" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit: X-ray: Chandra: NASA/CXC/SAO, XMM: ESA/XMM-Newton; IR: JWST: NASA/ESA/CSA/STScI, Spitzer: NASA/JPL/CalTech; Optical: Hubble: NASA/ESA/STScI, ESO; Image Processing: L. Frattare, J. Major, and K. Arcand⁣</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>NGC 346</h3>
+              <p>NGC 346, a star cluster in a nearby galaxy, the Small Magellanic Cloud, lights up as Chandra (in purple and blue) reveals young, hot, massive stars that send powerful winds outward from their surfaces. Webb shows arcs of gas and dust that stars and planets use as a source of material for their formation in red, green and blue.⁣</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="nebula9.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit: NASA/JPL-Caltech/Univ. of Ariz</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Rosette nebula</h3>
+              <p>Clouds of gases in shades of pinks and reds overlap each other in a formation that resembles a flower. The inside of the gasses glows white, while more saturated reds envelope the outer edges. Deep space dotted with distant stars and galaxies surrounds the nebula. Bright stars are scattered around the outer edges and in the center of the nebula. 
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="blackholes">
+        <br><br><br><br>
+        <h1> <img class="star" src="blackholes.png" alt=""> BLACKHOLES</h1>
+        <div class="grid">
+          <div class="item">
+            <div class="image-container">
+              <img src="sagA.jpg" alt="Nebula 1">
+              <div class="image-credit">
+                <p>Sagittarius A* imaged by the Event Horizon Telescope in 2017, released in 2022</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Sagitarious A* </h3>
+              <p>On May 12, 2022, the first image of Sagittarius A* was released by the Event Horizon Telescope Collaboration. The image, which is based on radio interferometer data taken in 2017, confirms that the object contains a black hole. This is the second image of a black hole.[14][17] This image took five years of calculations to process.[18] The data were collected by eight radio observatories at six geographical sites. Radio images are produced from data by aperture synthesis, usually from night long observations of stable sources. The radio emission from Sgr A* varies on the order of minutes, complicating the analysis.[19]</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="M87.webp" alt="Nebula 2">
+              <div class="image-credit">
+                <p>A sharpened up image of the black hole M87*, now captured at the fullest resolution of the Event Horizon Telescope. (Image credit: Medeiros et al. 2023)</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Messier 87*</h3>
+              <p>The first-ever photo of a supermassive black hole has gotten a "maximum resolution" makeover, thanks to artificial intelligence (AI). 
+
+                The iconic 2019 image of M87*, a solar system-size black hole in the center of the Virgo galaxy cluster, was made by pooling radio light that had traveled to us across 53 million light-years of space.
+                
+                Now, a new effort has used machine learning to clean the image, sharpening it to achieve the fullest resolution possible and exposing a larger and darker central region surrounded by glowing gas that astronomers have described as a "skinny donut." The researchers published the updated image April 13 in The Astrophysical Journal Letters.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="HR6819.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Just 1,000 light years from Earth, its two companion stars are visible to the naked eye.</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>HR 6819</h3>
+              <p>Astronomers with the European Southern Observatory (ESO) have discovered a black hole that is the nearest such object yet found, just 1,000 light years away—close enough to be seen with the unaided eye. It is part of a triple star system, dubbed HR 6819, and the ESO scientists believe other members of this class of systems may also harbor black holes that previously were not a high priority for black hole searches. They announced their discovery in a new paper published in the journal Astronomy and Astrophysics.
+
+                Scientists think there are far more black holes in the Universe than we have discovered to date—probably hundreds of millions of them, given the age of our Universe—because we can't observe them directly; we can merely infer their presence by their effect on surrounding matter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="galaxies">
+        <br><br><br><br>
+        <h1> <img class="star" src="universe.png" alt=""> GALAXIES</h1>
+        <div class="grid">
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy1.jpg" alt="Nebula 1">
+              <div class="image-credit">
+                <p>A 'wallpaper' of distant galaxies is a stunning backdrop for a runaway galaxy</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>UGC 10214</h3>
+              <p>Against a stunning backdrop of thousands of galaxies, this odd-looking galaxy with the long streamer of stars appears to be racing through space, like a runaway pinwheel firework.
+                <br>
+                This picture of the galaxy UGC 10214 was taken by the Advanced Camera for Surveys (ACS), which was installed aboard the NASA/ESA Hubble Space Telescope in March during Servicing Mission 3B. Dubbed the 'Tadpole', this spiral galaxy is unlike the textbook images of stately galaxies. Its distorted shape was caused by a small interloper, a very blue, compact, galaxy visible in the upper left corner of the more massive Tadpole. The Tadpole resides about 420 million light-years away in the constellation Draco.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy2.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA, ESA, and The Hubble Heritage Team, NZ</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3> Hickson Compact Group 92</h3>
+              <p>A clash among members of a famous galaxy quintet reveals an assortment of stars across a wide colour range, from young, blue stars to aging, red stars.
+                <br>
+                This portrait of Stephan's Quintet, also known as the Hickson Compact Group 92, was taken by the new Wide Field Camera 3 (WFC3) aboard the NASA/ESA Hubble Space Telescope. Stephan's Quintet, as the name implies, is a group of five galaxies. The name, however, is a bit of a misnomer. Studies have shown that group member NGC 7320, at upper left, is actually a foreground galaxy that is about seven times closer to Earth than the rest of the group.
+                Three of the galaxies have distorted shapes, elongated spiral arms, and long, gaseous tidal tails containing myriad star clusters, proof of their close encounters. These interactions have sparked a frenzy of star birth in the central pair of galaxies. This drama is being played out against a rich backdrop of faraway galaxies.</p>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy4.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA/ESA and The Hubble Heritage Team (STScI/AURA)</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>ESO 510-G13 </h3>
+              <p>The Hubble telescope has captured an image of an unusual edge-on galaxy, revealing remarkable details of its warped dusty disk and showing how colliding galaxies spawn the formation of new generations of stars. The dust and spiral arms of normal spiral galaxies, like our own Milky Way, appear flat when viewed edge-on. This Hubble Heritage image of ESO 510-G13 shows a galaxy that, by contrast, has an unusual twisted disk structure, first seen in ground-based photographs.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy5.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA/ESA</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>NGC 7714</h3>
+              <p>NGC 7714 is a spiral galaxy 100 million light-years from Earth — a relatively close neighbour in cosmic terms.
+                <br>
+                The galaxy has witnessed some violent and dramatic events in its recent past. Tell-tale signs of this brutality can be seen in NGC 7714's strangely shaped arms, and in the smoky golden haze that stretches out from the galactic centre — caused by an ongoing merger with its smaller galactic companion NGC 7715, which is out of the frame of this image.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy3.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  NASA, ESA, and The Hubble Heritage Team (STScI/AURA)</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>NGC 5866</h3>
+              <p>This is a unique NASA/ESA Hubble Space Telescope view of the disk galaxy NGC 5866 tilted nearly edge-on to our line-of-sight.
+
+                Hubble's sharp vision reveals a crisp dust lane dividing the galaxy into two halves. The image highlights the galaxy's structure: a subtle, reddish bulge surrounding a bright nucleus, a blue disk of stars running parallel to the dust lane, and a transparent outer halo.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="galaxy6.jpg" alt="Nebula 2">
+              <div class="image-credit">
+                <p>Credit:
+                  ESA/Hubble & NASA, Dark Energy Survey/DOE/FNAL/DECam/CTIO/NOIRLab/NSF/AURA, J. Dalcanton</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Arp-Madore 417-391</h3>
+              <p>Two galaxies right of centre form a ring shape. The ring is narrow and blue, and the cores of the two galaxies form a bulge on the ring’s side. A bright, orange star lies above the ring. Two smaller spiral galaxies appear left of centre, as well as a few stars. The background is black and speckled with very small stars and galaxies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      
+      <footer>
+        <p class="twinkle">🔭🪐☄🛸👽🛰🚀👩‍🚀👾
+        </p>
+        <p>© 2023 StardustOdyssey19. All rights reserved.
+          This website is inspired by the wonders of cosmos.
+          Images and illustrations used under license from various sources.<br></p>
+      </footer>
+    
+</body>
+</html>

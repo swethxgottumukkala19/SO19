@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinusSO19</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: black;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-image: url('headerbg1.png');
+      background-size: cover;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    header h1 {
+      flex: 2;
+      color: azure;
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    nav {
+      margin-top: 0px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a.a1 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a.a2 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    nav a.a1:hover {
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    footer {
+      flex: content;
+      height: 70px;
+      width:100%;
+      background-color: black;
+      color: burlywood;
+      text-align: center;
+    }
+
+    @keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.twinkle {
+  animation: twinkling 1s infinite;
+}
+
+    .joinpara {
+      text-align: center;
+      color: azure;
+      font-size: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    }
+    
+    form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+label.checkbox-label {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+input[type="submit"] {
+  background-color: midnightblue;
+  color: azure;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+ 
+marquee {
+  color: azure;
+  font-size: 30px;
+}
+
+.gold {
+  border: 1px solid azure;
+  padding: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  text-align: center;
+  color: gold;
+}
+
+    </style>
+</head>
+<body>
+  <script type="text/javascript">
+    function submitted() {
+       alert("Details provided have been submitted, an email will be sent shortly! Thank you for joining us on this cosmic adventure. Let's embark on a journey to the stars together!")
+       }
+</script>
+    <header>
+        <img src="icons8-telescope-64.png">
+        <h1>STARDUST ODYSSEY</h1>
+        
+        <nav>
+          <a class="a1" href="HomeSO19.html">Home</a>
+          <a class="a1" href="AboutSO19.html">About</a>
+          <a class="a1" href="CosmosSO19.html">Cosmos</a>
+          <a class="a1" href="MissionsSO19.html">Missions</a>      
+          <a class="a1" href="ContactSO19.html">Contact</a>
+          <a class="a2" href="JoinusSO19.html">Join us</a>
+        </nav>
+      </header>
+  <br><br><br><br><br>
+  <p class="joinpara">Whether you're a seasoned astronomer, an aspiring astronaut, or someone who simply gazes at the stars with wonder, SO19 is your gateway to the cosmos. Join us on this extraordinary journey as we unravel the secrets of the universe and explore the infinite possibilities that lie beyond our atmosphere.
+  <br><br>
+    We invite you to navigate our website and immerse yourself in the captivating realm of space. Stay up-to-date with the latest space missions, marvel at stunning images from distant galaxies, delve into the mysteries of black holes and nebulas, and expand your knowledge of the cosmic wonders that surround us. </p>
+  <br> <div class="gold"> Join us on this interstellar voyage as we venture into the cosmic depths! Transmit your stellar information and prepare to receive intergalactic directives and embark on epic quests that transcend the boundaries of the known universe.</div>
+<br>
+<marquee width="100%" direction="right" height="100px" scrollamount="20"> <img  src="astronautmoveicon64px.png" alt=""> JOIN US! </marquee>
+<br>
+<form id="myForm" onsubmit="submitted()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+  <label for="email">Email ID:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+  <label for="dob">Cosmic Birthdate:</label>
+  <input type="date" id="dob" name="dob" required>
+  
+  <label for="phone">Contact No:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+  <label class="checkbox-label" for="whatsapp">Receive updates on WhatsApp:</label>
+  <input type="checkbox" id="whatsapp" name="whatsapp">
+
+  <br>
+  
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+      <footer>
+        <p class="twinkle">🔭🪐☄🛸👽🛰🚀👩‍🚀👾
+        </p>
+        <p>© 2023 StardustOdyssey19. All rights reserved.
+          This website is inspired by the wonders of cosmos.
+          Images and illustrations used under license from various sources.<br></p>
+      </footer>
+</body>
+</html>

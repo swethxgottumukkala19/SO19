@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stardust Odyssey</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: black;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-image: url('headerbg1.png');
+      background-size: cover;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    header h1 {
+      flex: 2;
+      color: azure;
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    nav {
+  margin-top: 0px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+    nav a.a1 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a.a2 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    nav a.a1:hover {
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    img {
+      flex: 0;
+      padding: 5px 0px 5px 0px;
+    }
+
+    h1,h2 {
+      color: azure;
+      padding-left: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    }
+
+    @keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.twinkle {
+  animation: twinkling 1s infinite;
+}
+
+    div.containera {
+      position: relative;
+      padding-left: 15px;
+      width: 85%;
+      background-color: black;
+      color: azure;
+      display: flex;
+      align-items: end;
+      box-shadow: 7px 7px  rgb(60, 27, 83);
+      margin-left: 5px;
+      border: 1px solid rgba(240, 255, 255, 0.632);
+    }
+
+
+    div.containerb {
+      position: relative;
+      right: 0;
+      padding-left: 15px;
+      width: 85%;
+      background-color: black;
+      color: azure;
+      display: flex;
+      align-items: right;
+      box-shadow: -7px 7px  rgb(60, 27, 83);
+      margin-left: 170px;
+      border: 1px solid rgba(240, 255, 255, 0.632);
+    }
+
+    div.newscontext {
+      flex: 3;
+      font-size: 16px;
+      padding: auto;
+    }
+    
+    a {
+      color: blueviolet;
+    }
+    .img1 {
+      flex: 1;
+      width:260px;
+      height: 200px;
+      padding: 0;
+    }
+
+    video {
+      flex: 1;
+      width:230px;
+      height: 200px;
+      padding: 0;
+    }
+
+    figcaption {
+      font-size: 11px;
+      color: beige;
+    }
+
+    
+
+    h3 {
+      color: burlywood;
+      margin-bottom: 5px;
+    }
+
+    h6 {
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    footer {
+      height: 70px;
+      width:100%;
+      background-color: black;
+      color: burlywood;
+      text-align: center;
+    }
+
+    @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bounce {
+  animation: bounce 3s infinite;
+}
+
+.astronaut {
+  display: flex;
+  border: 1px solid rgb(57, 19, 75);
+  width: 96%;
+  margin-left: 20px;
+}
+.astronautimg {
+  width: 400px;
+  height: 400px;
+  margin-left: 20px;
+}
+
+@keyframes flashing {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flashing-text {
+  color: blueviolet;
+  font-size: 40px;
+  animation: flashing 1s infinite;
+}
+
+.typewriter {
+  overflow: hidden;
+  color: burlywood;
+  border-right: 0.15em solid #000; 
+  white-space: nowrap;
+  letter-spacing: 0; 
+  animation: typing 3s steps(40) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icons8-telescope-64.png">
+    <h1>STARDUST ODYSSEY</h1>
+    
+    <nav>
+      <a class="a2" href="HomeSO19.html">Home</a>
+      <a class="a1" href="AboutSO19.html">About</a>
+      <a class="a1" href="CosmosSO19.html">Cosmos</a>
+      <a class="a1" href="MissionsSO19.html">Missions</a>      
+      <a class="a1" href="ContactSO19.html">Contact</a>
+      <a class="a1" href="JoinusSO19.html">Join us</a>
+    </nav>
+  </header>
+  <br><br><br><br><br>
+  <h1 class="typewriter"> Greetings, intrepid space explorer!! 🧑‍🚀</h1><div class="astronaut">
+  <img class="astronautimg" src="astronautfishninplaneticon.png">
+   <h3 class="bounce" style="color: azure; margin: 50px;">Welcome to the cosmic realm of SO19, where we defy gravity and dive headfirst into the captivating mysteries of space. the wonders of space beckon us with their enchanting allure. We extend a warm celestial welcome to you, fellow explorer, as you embark on an extraordinary journey through the depths of the cosmos.
+    You're here, that means you must be passionate about unraveling the secrets of the universe and igniting the flames of curiosity within every aspiring astronaut. Our cosmic sanctuary is a place where you can transcend earthly boundaries and immerse yourself in the infinite wonders that await beyond our atmosphere.</h3>  
+  </div>
+  <br>
+  <h2>
+    <span class="flashing-text">LATEST IN</span>
+  </h2>
+  <div class="containers">
+  <div class="containera">
+    <div class="newscontext">
+      <h3>See Mars like never before in this amazing new photo from a 20-year-old probe</h3>
+      <h6>By<a href="https://twitter.com/sciencef1rst"> Robert Lea</a>  09 Jun, 2023, 09:22 PM IST</h6>
+      <p>A stunning new image shows Mars in an entirely new light, revealing intricate details of the Martian surface.The image was released to commemorate 20 years of the European Space Agency's (ESA) Mars Express spacecraft. Since the Mars Express entered orbit around Mars on Christmas Day 2003, the orbiter has been snapping images of the Martian surface from an altitude of around 186 miles (300 kilometers), the closest the spacecraft comes to the Red Planet. This results in images that are around 31 miles (50 kilometers) wide. Uusing data collected by the spacecraft's High-Resolution Stereo Camera (HRSC). The mosaic was built from 90 images the HRSC snapped while its ride was higher above Mars in its elliptical orbit.</p>
+    </div>
+    <div><figure><img src="news1.jpg" class="img1"><figcaption> (Image credit: ESA/DLR/FU Berlin/G. Michael)</figcaption></figure> </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containerb">
+    <div>
+      <figure><img src="news2.png" class="img1"><figcaption>Chairman of the Indian Space Research Organisation (ISRO) S. Somanath</figure>
+    </div>
+    <div class="newscontext">
+      <h3>Primary objective is a 'sure-shot safe mission': Not in a hurry to launch Gaganyaan, asserts ISRO chief</h3>
+      <h6>Last Updated: Jun 08, 2023, 08:14 PM IST</h6>
+      <p>The space agency has redefined the mission in such a way that it will achieve success in the very first attempt. For this, it has enhanced the testing and demonstration mission substantially in recent times. These exercises involve additional abort missions to ensure the safety of the crew,<a href="https://www.isro.gov.in/">ISRO</a> chief explained.
+        The space agency has redefined the mission in such a way that it will achieve success in the very first attempt. For this, it has enhanced the testing and demonstration mission substantially in recent times. These exercises involve additional abort missions to ensure the safety of the crew, he explained.
+<br>
+According to Somanath, the first exercise will probably happen in August, which was earlier planned in July.
+      </p>
+</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containera">
+    <div class="newscontext">
+      <h3>SpaceX-CRS-28 MISSION</h3>
+      <h6>Dragon autonomously docked with the space station on Tuesday, June 6, at 5:54 a.m. ET (9:54 UTC).</h6>
+      <p>
+        On Monday, June 5 at 11:47 a.m. ET, Falcon 9 launched Dragon's 28th Commercial Resupply Services mission (CRS-28) to the International Space Station from Launch Complex 39A (LC-39A) at <a href="https://www.nasa.gov/centers/kennedy/home/index.html">NASA's Kennedy Space Center in Florida</a> . Following stage separation, Falcon 9's first stage landed on the Just a Shortfall of Gravitas droneship in the Atlantic Ocean.
+        <br>
+        <a href="https://en.wikipedia.org/wiki/SpaceX_CRS-28">SpaceX CRS-28</a> , also known as SpX-28, is a Commercial Resupply Service mission to the International Space Station (ISS) launched on 5 June 2023. The mission is contracted by NASA and is flown by SpaceX using a Cargo Dragon C208. This would be the eighth flight for SpaceX under NASA's CRS Phase 2.
+       </p>
+
+    </div>
+    <div>
+      <figure><img src="news3.png" class="img1"><figcaption>(image credit: SpaceX CRS-28 Mission Archives)</figcaption></figure>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containerb">
+    <div><figure><img src="news4.jpg" class="img1"><figcaption>An audience member asks a question at the <br>Engaging Women and Girls in STEM through DS<br> event.Credits: NASA/Aubrey Gemignani</figcaption></figure></div>
+    <div class="newscontext">
+      <h3>NASA Awards $5 Million to Women's Colleges Tackling STEM Gender Gap</h3>
+      <h6>Jun 7, 2023, RELEASE 23-065</h6>
+      <p>As part of a Biden/Harris initiative, NASA will award more than $5 million in funding to seven Women's Colleges and Universities (WCUs) to research and develop strategies that increase retention of women in STEM degree programs and careers.
+
+        The agency's <a href="https://www.nasa.gov/stem/murep/home/index.html">Minority University Research and Education Project (MUREP)</a> created the Women's Colleges and Universities opportunity to help women overcome obstacles and barriers to working in the fields of science, technology, engineering, and math.
+        
+        This award seeks to address the significant national gender gap and disparate experiences of women in STEM in the United States, both in higher education and the workforce.
+        
+        “This is a very exciting first; we're making strides to close the pervasive gender gap in STEM, and Women's Colleges and Universities are well-positioned to help drive that positive change,” said NASA Deputy Administrator Pam Melroy, a graduate from Wellesley College. “It's more important than ever we have brilliant, enthusiastic people entering the workforce and ready to take on the ambitious plans and challenges ahead.”</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containera">
+    <div class="newscontext">
+      <h3>Hazardous Air Chokes Northeastern States</h3>
+      <h6>June 9, 2023</h6>
+      <p>The northeastern U.S. experienced another day with some of the worst air quality recorded in the region, caused by particularly severe wildfire activity in Canada. On June 8, 2023, the province of Quebec reported 136 active fires that have charred an area approximately the size of Delaware.
+
+        This animation shows how black carbon particles, or soot, moved across eastern portions of Canada and the U.S. from June 3-8, 2023. Polluted air originated from a spike in wildfire activity in Quebec in early June. Then, a weather system pushed smoke from those blazes toward northeast and mid-Atlantic states, bringing hazardous air to densely populated regions of the U.S.
+        
+        The black carbon data come from NASA's GEOS forward processing (GEOS-FP) model, which assimilates data from satellite, aircraft, and ground-based observing systems. In addition to making use of satellite observations of aerosols and fires, GEOS-FP also incorporates meteorological data like air temperature, moisture, and winds to project the plume's behavior. The fine particulate matter (PM<sub>2.5</sub>) in this pollution is small enough to enter the lungs and can lead to health problems.</p>
+    </div>
+    <div>
+      <figure><img src="news5.png" class="img1"><figcaption>NASA Earth Observatory (2023, June 8)<br> <a href="https://earthobservatory.nasa.gov/images/151433/smoke-smothers-the-northeast">Smoke Smothers the Northeast</a>.<br> Accessed June 8, 2023.</figcaption></figure>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containerb">
+    <div>
+      <figure><img src="news6.jpg" class="img1"><figcaption>Astronaut Woody Hoburg watches as a new roll-out <br>solar array deploys after he and fellow NASA <br>spacewalker Stephen Bowen (out of frame) successfully<br> installed it on the space station. Credit: NASA TV</figcaption></figure>
+    </div>
+    <div class="newscontext">
+      <h3>NASA Spacewalkers Complete Solar Array Installation</h3>
+      <h6>Mark Gracia June 9, 2023, Expedition 69</h6>
+      <p>Expedition 69 Flight Engineers <a href="https://www.nasa.gov/astronauts/biographies/stephen-g-bowen">Steve Bowen</a> and <a href="https://www.nasa.gov/astronauts/biographies/warren-hoburg">Woody Hoburg</a> of NASA concluded their spacewalk at 3:28 p.m. EDT after 6 hours and 3 minutes.
+
+        Bowen and Hoburg completed all of their objectives to install an IROSA (International Space Station Roll-Out Solar Array) to augment power generation for the 1A power channel on the station’s starboard truss structure. The crew members also completed several get ahead tasks setting the stage for the duo to go back outside Thursday, June 15, to install the sixth in the series of IROSAs on the starboard 6 truss of the station for the 1B power channel.
+        Each new IROSA will produce more than 20 kilowatts of electricity, and once all are installed, will enable a 30% increase in power production over the station’s current arrays.
+
+        <br>It was the <a href="https://www.nasa.gov/mission_pages/station/spacewalks/">264th spacewalk</a> in support of space station assembly, upgrades, and maintenance, and was the third spacewalk for both astronauts.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containera">
+    <div class="newscontext">
+      <h3>Hubble Gazes at a Hazy Galaxy</h3>
+      <h6>Jun 2, 2023</h6>
+      <p>This moody image shows a galaxy named <a href="https://www.nasa.gov/feature/goddard/2018/messier-85">Messier 85</a>, captured in all its delicate, hazy glory by the NASA/ESA<a href="https://www.nasa.gov/mission_pages/hubble/main/index.html"> Hubble Space Telescope</a>. Messier 85 slants through the constellation of Coma Berenices (Berenice’s Hair) and lies around 50 million light-years from Earth.
+
+        Messier 85 is intriguing its properties lie somewhere between those of a lenticular and an elliptical galaxy, and it appears to be interacting with two of its neighbors: the beautiful spiral NGC 4394, located out of frame to the upper left, and the small elliptical MCG 3-32-38, located out of frame to the center bottom.
+        
+        The galaxy contains some 400 billion stars, most of which are very old. However, the central region hosts a population of relatively young stars of just a few billion years in age; these stars are thought to have formed in a late burst of star formation, likely triggered as Messier 85 merged with another galaxy over four billion years ago. Messier 85 has another potentially strange quality. Almost every galaxy is thought to have a supermassive black hole at its center, but based on measurements of the velocities of stars in this galaxy, it is unclear whether Messier 85 contains such a black hole.</p> 
+     </div>
+     <div>
+      <figure><img src="news7.jpg" class="img1"><figcaption>Image credit: ESA/Hubble & NASA, R. O'Connell<br>Editor: Andrea Gianopoulos</figcaption></figure>
+     </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="containerb">
+    <div>
+      <figure><img src="news8.png" class="img1"><figcaption>Credits: NASA, ESA, CSA<br><a href="https://webbtelescope.org/contents/media/images/2023/127/01H1Q1CGJD51CDJTK2NHJWD06M">Download Full-Resolution image here</a></figcaption></figure>
+     </div>
+     <div class="newscontext">
+      <h3>Early Universe Crackled With Bursts of Star Formation, Webb Shows</h3>
+      <h6>Jun 5, 2023</h6>
+      <p>“Previously, the earliest galaxies we could see just looked like little smudges. And yet those smudges represent millions or even billions of stars at the beginning of the universe,” said Hainline. “Now, we can see that some of them are actually extended objects with visible structure. We can see groupings of stars being born only a few hundred million years after the beginning of time.”
+
+        “We're finding star formation in the early universe is much more complicated than we thought,” added Rieke.
+        
+        These results are being reported at the 242<sup>nd</sup> meeting of the American Astronomical Society in Albuquerque, New Mexico.<br>
+        
+        <i>The<a href="https://www.nasa.gov/mission_pages/webb/main/index.html"> James Webb Space Telescope</a> is the world's premier space science observatory. Webb will solve mysteries in our solar system, look beyond to distant worlds around other stars, and probe the mysterious structures and origins of our universe and our place in it. Webb is an international program led by NASA with its partners, ESA (European Space Agency) and the Canadian Space Agency.
+        
+        Laura Betz</i></p> 
+     </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p class="twinkle">🔭🪐☄🛸👽🛰🚀👩‍🚀👾
+    </p>
+    <p>&copy;2023 StardustOdyssey19. All rights reserved.
+      This website is inspired by the wonders of cosmos.
+      Images and illustrations used under license from various <br></p>      
+  </footer>
+
+</body>
+</html>

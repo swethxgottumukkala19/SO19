@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutSO19</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: black;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-image: url(headerbg1.png);
+      background-size: cover;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    header h1 {
+      flex: 2;
+      color: azure;
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    nav {
+      margin-top: 0px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a.a1 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a.a2 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    nav a.a1:hover {
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    footer {
+      height: 70px;
+      width:100%;
+      background-color: black;
+      color: burlywood;
+      text-align: center;
+    }
+
+    @keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.twinkle {
+  animation: twinkling 1s infinite;
+}
+
+    .divx {
+      text-shadow: 2px 2px 4px rgba(106, 0, 255, 0.756);
+      color: azure;
+      text-align: center;
+      margin: 100px 100px 100px 100px;
+      font-size: 17px;
+      
+    }
+
+    .divx h1 {
+      font-size: 40;
+      text-shadow: 2px 2px 4px rgba(255, 196, 0, 0.756);
+      color: burlywood;
+      text-align: center
+      margin: 10px 10px 10px 10px;
+      
+    }
+
+
+    .divyz {
+      display: flex;
+  justify-content: space-evenly;
+  width: 96%;
+  border: 1px solid;
+  border-color: burlywood;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+    }
+    .divy {
+      
+      max-width: 50%;
+      color: burlywood;
+    }
+
+    .divz {
+      
+      max-width: 50%;
+      color: burlywood;
+    }
+
+    .aboutlogo{
+      width: 100px;
+      height: 100px;
+    }
+
+    .slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.selectors {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.selector {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 24px;
+  user-select: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="icons8-telescope-64.png">
+        <h1>STARDUST ODYSSEY</h1>
+        
+        <nav>
+          <a class="a1" href="HomeSO19.html">Home</a>
+          <a class="a2" href="AboutSO19.html">About</a>
+          <a class="a1" href="CosmosSO19.html">Cosmos</a>
+          <a class="a1" href="MissionsSO19.html">Missions</a>      
+          <a class="a1" href="ContactSO19.html">Contact</a>
+          <a class="a1" href="JoinusSO19.html">Join us</a>
+        </nav>
+      </header>
+      <br>
+      <div class="divx">
+        <img class="aboutlogo" src="icons8-telescope-64.png">
+      <h1>ABOUT SO19!</h1>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="aboutuspic1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="aboutuspic2.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="aboutuspic3.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="aboutuspic4.jpg" alt="Image 3">
+        </div>
+      </div>
+      <div class="selectors">
+        <span class="selector" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="selector" onclick="changeSlide(1)">&#10095;</span>
+      </div>
+      
+        <p>
+        At SO19, we are dedicated to bringing you the latest news, discoveries, and insights from the captivating realm of space. Our mission is to provide a platform where enthusiasts, astronomers, and curious minds can delve into the wonders of the universe.
+        With a passion for space exploration and a commitment to spreading knowledge, our team of experts scours the depths of the cosmos to bring you intriguing updates on space missions, galaxies, black holes, nebulas, and more. We strive to deliver accurate, engaging, and thought-provoking content that fuels your curiosity and expands your understanding of the vastness beyond our planet.
+        Through our articles, videos, and interactive features, we aim to inspire awe and ignite a sense of wonder about the mysteries of space. <br>From groundbreaking discoveries by space agencies and research institutions to the extraordinary images captured by telescopes and space probes, we bring you closer to the frontiers of exploration.
+        We believe that exploring the wonders of space goes beyond scientific discoveries; it also fuels our imagination and stirs our collective consciousness.By sharing the stories of astronauts, the history of space exploration, and the impact of space on our everyday lives, we hope to spark a sense of unity and foster a deeper appreciation for the beauty and fragility of our planet Earth.
+        Whether you're a seasoned astronomer, an aspiring astronaut, or someone who simply gazes at the stars with wonder, [Your Space Exploration Website] is your gateway to the cosmos. Join us on this extraordinary journey as we unravel the secrets of the universe and explore the infinite possibilities that lie beyond our atmosphere.    
+        </p></div>
+
+        <div class="divyz">
+
+        <div class="divy">
+          <h2><u>Web Development Team</u></h2> 
+Project Lead / Producer: <i> Swethx Gottumukkala </i><br>
+
+Social Media Leads: <i> Tom Hiddlestone, Kane Williamson</i> <br>
+
+Science Writers: <i> Lonnie Shekhtman and Jay Thompson</i> <br>
+
+Web Development/Graphics: <i> Moore Boeck</i> <br>
+
+Original Solar System Orrery Design: <i>Martin Vezina</i> 
+        </div>
+
+        <div class="divz">
+          <h2><u>Management/Task Plan</u></h2>
+          This site is produced for New Zealand Science Mission Directorate's Planetary Science Division by the Solar System Exploration Public Engagement teams at NASA'a and SpaceX's Goddard Space Flight Center and Jet Propulsion Laboratory as part of Planetary Science Program Support Task Plan 40-15961, Rev. E. <br>
+
+Senior Leadership: <i> Dr. Lori Glaze, Director, NZ Planetary Science Division</i> <br>
+
+Responsible NASA Official: <i> Kristen Erickson</i> <br>
+
+JPL Public Engagement Manager: <i> Alice Wessen</i>
+        </div>
+        </div>
+
+
+      <footer>
+        <p class="twinkle">🔭🪐☄🛸👽🛰🚀👩‍🚀👾
+        </p>
+        <p>© 2023 StardustOdyssey19. All rights reserved.
+          This website is inspired by the wonders of cosmos.
+          Images and illustrations used under license from various sources. <br> </p>
+      </footer>
+
+      <script>let slideIndex = 1;
+        showSlide(slideIndex);
+        
+        function changeSlide(n) {
+          showSlide(slideIndex += n);
+        }
+        
+        function showSlide(n) {
+          const slides = document.getElementsByClassName('slide');
+          const selectors = document.getElementsByClassName('selector');
+        
+          if (n > slides.length) {
+            slideIndex = 1;
+          } else if (n < 1) {
+            slideIndex = slides.length;
+          }
+        
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+          }
+        
+          for (let i = 0; i < selectors.length; i++) {
+            selectors[i].classList.remove('active');
+          }
+        
+          slides[slideIndex - 1].style.display = 'block';
+          selectors[slideIndex - 1].classList.add('active');
+        
+          setTimeout(() => {
+            changeSlide(1);
+          }, 4000);
+        }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MissionsSO19</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif; 
+      background-color: black;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-image: url('headerbg1.png');
+      background-size: cover;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    header h1 {
+      flex: 2;
+      color: azure;
+      font-size: 40px;
+      text-align: left;
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    nav {
+      margin-top: 0px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a.a1 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    nav a.a2 {
+      padding: 25px 30px 25px 30px;
+      color: azure;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    nav a.a1:hover {
+      background-color: rgba(240, 255, 255, 0.692);
+      color: black;
+      cursor: url('icons8-rocket-24.png'), auto;
+    }
+
+    footer {
+      height: 70px;
+      width:100%;
+      background-color: black;
+      color: burlywood;
+      text-align: center;
+    }
+
+    @keyframes twinkling {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.twinkle {
+  animation: twinkling 1s infinite;
+}
+    
+    .mission-container {
+  color: azure;
+}
+
+.mission {
+  margin-left: 40px;
+  width: 90%;
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid purple;
+  box-shadow: 0 2px 4px rgba(198, 129, 24, 0.7);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.mission h2 {
+  size: 60px;
+  color: azure;
+  text-shadow: 2px 2px 4px rgba(255, 166, 0, 0.534);
+}
+
+.mission h3 {
+  size: 30px;
+  color: cyan;
+}
+
+.mission img {
+  width: 250px;
+  height: 250px;
+  padding: 7px;
+  border: 1px solid azure;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expand-btn {
+  display: block;
+  background-image: url(HD-wallpaper-milky-way-stars-space.jpg);
+  background-size: cover;
+  color: azure;
+  margin-bottom: 10px;
+}
+
+.expand-btn:hover {
+  display: block;
+  background-image: url(HD-wallpaper-milky-way-stars-space.jpg);
+  background-size: cover;
+  color: azure;
+  margin-bottom: 10px;
+}
+
+.mission-details {
+  color: azure;
+  display: none;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.external-link-btn {
+  margin-left: 7px;
+  display: none;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.external-link-btn a {
+  color: azure;
+  text-decoration: none;
+}
+
+.mission:hover .external-link-btn {
+  display: inline-block;
+}
+
+</style>
+    
+    
+</head>
+<body>
+
+    <header>
+        <img src="icons8-telescope-64.png">
+        <h1>STARDUST ODYSSEY</h1>
+        
+        <nav>
+          <a class="a1" href="HomeSO19.html">Home</a>
+          <a class="a1" href="AboutSO19.html">About</a>
+          <a class="a1" href="CosmosSO19.html">Cosmos</a>
+          <a class="a2" href="MissionsSO19.html">Missions</a>      
+          <a class="a1" href="ContactSO19.html">Contact</a>
+          <a class="a1" href="JoinusSO19.html">Join us</a>
+        </nav>
+      </header>
+      <br><br><br><br> <br><br>
+      <div class="mission-container">
+        <div class="mission">
+          <h2>VOYAGER</h2>
+          <button class="expand-btn">View Details</button>
+          <div class="mission-details">
+            <h3>About</h3>
+            <p>The twin Voyager 1 and 2 spacecraft are exploring where nothing from Earth has flown before. Continuing on their over-40-year journey since their 1977 launches, they each are much farther away from Earth and the sun than Pluto. In August 2012, Voyager 1 made the historic entry into interstellar space, the region between stars, filled with material ejected by the death of nearby stars millions of years ago. Scientists hope to learn more about this region from Voyager 2's <a href="">November 2018 exit from the heliosphere into interstellar space</a> . Both spacecraft are still sending scientific information about their surroundings through the Deep Space Network, or DSN.
+
+              The primary mission was the exploration of Jupiter and Saturn. After making a string of discoveries there -- such as active volcanoes on Jupiter's moon Io and intricacies of Saturn's rings -- the mission was extended. Voyager 2 went on to explore Uranus and Neptune, and is still the only spacecraft to have visited those outer planets. The adventurers' current mission, the Voyager Interstellar Mission (VIM), will explore the outermost edge of the Sun's domain. And beyond.
+              
+              Learn more about the <a href="">Interstellar Mission</a>.</p>
+              <h3>Mission Objective</h3>
+              <p>The mission objective of the Voyager Interstellar Mission (VIM) is to extend the NASA exploration of the solar system beyond the neighborhood of the outer planets to the outer limits of the Sun's sphere of influence, and possibly beyond. This extended mission is continuing to characterize the outer solar system environment and search for the heliopause boundary, the outer limits of the Sun's magnetic field and outward flow of the solar wind. Penetration of the heliopause boundary between the solar wind and the interstellar medium will allow measurements to be made of the interstellar fields, particles and waves unaffected by the solar wind.</p>
+            <img src="voyager1.jpg" alt="Mission Image">
+            <img src="voyager2.jpg" alt="Mission Image">
+            <img src="voyager3.jpg" alt="Mission Image">
+            <img src="voyager4.jpg" alt="Mission Image">
+            <img src="voyager6.jpg" alt="Mission Image">
+            <img src="voyager5.jpg" alt="Mission Image">
+            <img src="voyager7.jpg" alt="Mission Image">
+            <img src="voyager8.jpg" alt="Mission Image">
+            <button class="external-link-btn"><a href="https://www.nasa.gov/mission_pages/voyager/resources">Media Resources</a></button>
+          </div>
+        </div>
+        <br><br>
+        <div class="mission-container">
+          <div class="mission">
+            <h2>ARTEMIS I</h2>
+            <button class="expand-btn">View Details</button>
+            <div class="mission-details">
+              <h3>About</h3>
+              <p>Artemis I, formerly Exploration Mission-1,will be the first integrated flight test of NASA’s Deep Space Exploration Systems: the Orion spacecraft, Space Launch System (SLS) rocket, with the newly upgraded Exploration Ground Systems at Kennedy Space Center in Cape Canaveral, Florida.
+                <br>
+                The primary operations goal of the mission is to assure a safe crew module entry, descent, splashdown, and recovery. In addition to sending Orion on its journey around the Moon, SLS will carry 10 small satellites that will perform their own science and technology investigations. The first in a series of increasingly complex missions, Artemis I will provide a foundation for human deep space exploration and demonstrate our commitment and capability to extend human existence to the Moon and beyond prior to the first flight with crew on Artemis II. </p>
+                <h3>Mission Objective</h3>
+                <p>Artemis I is foundational to the space economy, fueling new industries and technologies, supporting job growth, and furthering the demand for a highly skilled work force. Men and women in all fifty states are hard at work building the Deep Space Exploration Systems to support missions to deep space. NASA prime contractors, Aerojet Rocketdyne, Boeing, Jacobs, Lockheed Martin, and Northrop Grumman currently have over 3,200 suppliers contributing to the milestone achievement that heralds the success of America's human spaceflight program.</p>
+              <img src="artemis1.jpg" alt="Mission Image">
+              <img src="artemis2.jpg" alt="Mission Image">
+              <img src="artemis3.jpg" alt="Mission Image">
+              <img src="artemis4.png" alt="Mission Image">
+              <img src="artemis5.jpg" alt="Mission Image">
+              <img src="artemis6.jpg" alt="Mission Image">
+              <img src="artemis7.jpg" alt="Mission Image">
+              <img src="artemis8.jpg" alt="Mission Image">
+
+              <button class="external-link-btn"><a href="https://www.nasa.gov/content/artemis-i-media-resources">Media Resources</a></button>
+            </div>
+          </div>
+          <br><br>
+          <div class="mission-container">
+            <div class="mission">
+              <h2>JUNO</h2>
+              <button class="expand-btn">View Details</button>
+              <div class="mission-details">
+                <h3>Unlocking Jupiter's Secrets</h3>
+                <p>On August 5, 2011, NASA's Juno spacecraft embarked on a 5-year journey to our solar system's largest planet - the gas giant Jupiter. Its mission: to probe beneath the planet's dense clouds and answer questions about the origin and evolution of Jupiter, our solar system, and giant planets in general across the cosmos. Juno arrived at Jupiter on July 4, 2016, after a 5-year, 1.7-billion-mile journey, and settled into a 53-day polar orbit stretching from just above Jupiter's cloud tops to the outer reaches of the Jovian magnetosphere.
+                  <br>
+                  Juno's discoveries have revolutionized our understanding of Jupiter and solar system formation. During the prime mission's 35 orbits of Jupiter, Juno collected more than three terabits (375 gigabytes) of science data and provided dazzling views of Jupiter and its satellites, all processed by citizen scientists with NASA's first-ever camera dedicated to public outreach. Juno's many discoveries have changed our view of Jupiter's atmosphere and interior, revealing an atmospheric weather layer that extends far beyond its clouds and a deep interior with a diluted, or "fuzzy," heavy element core. Near the end of the prime mission, as the spacecraft's orbit evolved, flybys of the moon Ganymede initiated Juno’s transition into a full Jovian system explorer.</p>
+                  <h3>Mission Timeline</h3>
+                  <p> <ul>
+                    <li>Launch - August 5, 2011</li>
+                    <li>Deep Space Maneuvers - August/September 2012</li>
+                    <li>Earth flyby gravity assist - October 2013</li>
+                    <li>Jupiter arrival - July 2016</li>
+                    <li>Extended Mission - August 2021</li>
+                    <li>End of Mission - September 2025</li>
+                  </ul>   </p>
+                  <img src="juno1.jpg" alt="Mission Image">
+                  <img src="juno2.jpg" alt="Mission Image">
+                  <img src="juno3.jpg" alt="Mission Image">
+                  <img src="juno4.gif" alt="Mission Image">
+                <button class="external-link-btn"><a href="https://www.nasa.gov/mission_pages/voyager/resources">Media Resources</a></button>
+              </div>
+            </div>
+            <br><br>
+            <div class="mission-container">
+              <div class="mission">
+                <h2>JAMES WEBB SPACE TELESCOPE- JWST</h2>
+                <button class="expand-btn">View Details</button>
+                <div class="mission-details">
+                  <h3>About</h3>
+                  <p>The James Webb Space Telescope (sometimes called JWST or Webb) will be a large infrared telescope with a 6.5-meter primary mirror. The telescope will be launched on an Ariane 5 rocket from French Guiana in 2021. 
+
+                    The Webb telescope will be the premier observatory of the next decade, serving thousands of astronomers worldwide. It will study every phase in the history of our Universe, ranging from the first luminous glows after the Big Bang, to the formation of solar systems capable of supporting life on planets like Earth, to the evolution of our own Solar System.
+                    <br>
+                    The Webb telescope was formerly known as the "Next Generation Space Telescope" (NGST); it was renamed in September 2002 after a former NASA administrator, James Webb.
+                    
+                    Webb is an international collaboration between NASA, ESA (the European Space Agency), and the Canadian Space Agency (CSA). NASA's Goddard Space Flight Center in Greenbelt, Maryland, is managing the development effort. The main industrial partner is Northrop Grumman; the Space Telescope Science Institute will operate Webb after launch.
+                    
+                    Several innovative technologies have been developed for Webb. These include a primary mirror made of 18 separate segments that unfold and adjust to shape after launch. The mirrors are made of ultra-lightweight beryllium. Webb's biggest feature is a tennis court sized five-layer sunshield that attenuates heat from the Sun more than a million times. The telescope’s four instruments - cameras and spectrometers - have detectors that are able to record extremely faint signals. One instrument (NIRSpec) has programmable microshutters, which enable observation up to 100 objects simultaneously. Webb also has a cryocooler for cooling the mid-infrared detectors of another instrument (MIRI) to a very cold 7 kelvins (minus 447 Fahrenheit) so they can work.
+                    <br>
+                    For information on the James Webb Space Telescope in many languages, click here: <a href="https://jwst.nasa.gov/content/features/keyFactsInternational/">https://jwst.nasa.gov/content/features/keyFactsInternational/</a></p>
+                    <h3>The Webb Observatory</h3>
+                    <p>The Observatory is the space-based portion of the James Webb Space Telescope system. It is comprised of the Optical Telescope Element (OTE), the Integrated Science Instrument Module (ISIM), the sunshield and the spacecraft bus.
+                      <br>
+                      The <a href="">OTE</a> is the eye of the Observatory. It consists of the mirrors and the backplane. The OTE gathers the light coming from space and provides it to the science instruments located in the ISIM. The backplane is like the "spine" of Webb. It supports the mirrors.
+                      <br>
+                      The <a href="">ISIM</a> contains Webb's cameras and instruments. It integrates four major instruments and numerous subsystems into one payload.
+                      <br>
+                      The <a href="">sunshield</a> separates the observatory into a warm sun-facing side (spacecraft bus) and a cold anti-sun side (OTE and ISIM). The sunshield keeps the heat of the Sun, Earth, and spacecraft bus electronics away from the OTE and ISIM so that these pieces of the Observatory can be kept very cold (The operating temperature has to be kept under 50 K or -370 deg F).
+                      <br>
+                      The <a href="">spacecraft</a> bus provides the support functions for the operation of the Observatory. The bus houses the six major subsystems needed to operate the spacecraft: the Electrical Power Subsystem, the Attitude Control Subsystem, the Communication Subsystem, the Command and Data Handling Subsystem, the Propulsion Subsystem, and the Thermal Control Subsystem.
+                    </p>
+                    <img src="jwst1.jpg" alt="Mission Image">
+                    <img src="jwst2.png" alt="Mission Image">
+                    <img src="jwst3.png" alt="Mission Image">
+                    <img src="jwst4.png" alt="Mission Image">
+                    <img src="jwst5.png" alt="Mission Image">
+                    <img src="jwst82.png" alt="Mission Image">
+                    <img src="jwst6.jpg" alt="Mission Image">
+                    <img src="jwst9.png" alt="Mission Image">
+
+
+                  <button class="external-link-btn"><a href="https://www.nasa.gov/mission_pages/voyager/resources">Media Resources</a></button>
+                </div>
+              </div>
+              <br><br>
+      </div>
+      
+      
+      <footer>
+        <p class="twinkle">🔭🪐☄🛸👽🛰🚀👩‍🚀👾
+        </p>
+        <p>© 2023 StardustOdyssey19. All rights reserved.
+          This website is inspired by the wonders of cosmos.
+          Images and illustrations used under license from various sources.<br></p>
+      </footer>
+    
+
+      <script>
+        const expandButtons = document.querySelectorAll('.expand-btn');
+        
+        expandButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const missionDetails = button.nextElementSibling;
+            missionDetails.style.display = missionDetails.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        </script>
+</body>
+</html>
